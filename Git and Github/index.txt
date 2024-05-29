@@ -1,0 +1,7 @@
+Jared
+Burgers
+
+Steps
+git add .
+git commit -m "description/message"
+git push -u origin master
