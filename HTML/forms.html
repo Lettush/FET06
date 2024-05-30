@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- Form -->
+    <form>
+        <h3>Sample Form</h3>
+
+        <!-- Inputs (Text, Number, etc.) -->
+        <label for="name">Username:</label>
+        <input type="text" id="name" required>
+
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="********" required>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="sample@email.com" required>
+
+        <br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" cols="50" placeholder="Enter your message here" style="resize:none;"></textarea>
+
+        <br>
+
+        <!-- Select / Dropdown Menu -->
+        <select id="favorite-food">
+            <option selected disabled>Select food</option>
+            <option value="pizza">Pizza</option>
+            <option value="steak">Steak</option>
+            <option value="fries">Fries</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <input type="radio" name="options" id="option1">
+        <label for="option1">Option 1</label>
+        <input type="radio" name="options" id="option2">
+        <label for="option2">Option 2</label>
+        <input type="radio" name="options" id="option3">
+        <label for="option3">Option 3</label>
+
+        <br><br>
+
+        <!-- Checkboxes -->
+        <input type="checkbox" name="checkboxes" id="check1" value="check1">
+        <label for="check1">Check 1</label>
+        <input type="checkbox" name="checkboxes" id="check2" value="check2">
+        <label for="check2">Check 2</label>
+        <input type="checkbox" name="checkboxes" id="check3" value="check3">
+        <label for="check3">Check 3</label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+
+    <!-- Tables and Images -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Take up 2 rows -->
+                <td rowspan="2">Joseph</td>
+                <!-- First row, second column -->
+                <td>28 years old</td>
+            </tr>
+
+            <tr>
+                <!-- Second row, second column -->
+                <td>Vancouver</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Jon</td>
+                <td>22 years old</td>
+            </tr>
+
+            <tr>
+                <td>New York</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- Take up 2 columns -->
+                <td colspan="2">Total: 2 people</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Images -->
+    <br>
+
+    <!-- Add an image using image url -->
+    <img src="https://images.unsplash.com/photo-1707822906791-e5a2f06d83d7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcxNzAzMDM0OA&ixlib=rb-4.0.3&q=80&w=1920" alt="Example Image" width="500px">
+
+    <br>
+
+    <!-- Add an image from our folder -->
+    <img src="photo.jfif" alt="Example Image 2" width="500px">
+
+    <br>
+
+    <img src="images/photo2.jfif" alt="Example Image 3" width="500px">
+</body>
+</html>
