@@ -1,0 +1,77 @@
+/* Universal Selector */
+* {
+  color: blue;
+}
+
+/* Element Selector */
+h1 {
+  color: red;
+}
+
+/* Class Selector */
+.parag1 {
+  color: aqua;
+}
+
+/* ID Selector */
+#parag2 {
+  color: yellowgreen;
+}
+
+/* Attribute Selector */
+/* target any element with href */
+[href] {
+  color: pink;
+}
+
+/* target an <a> with href */
+a[href] {
+  color: orchid;
+}
+
+/* target href with specific link */
+a[href="www.example1.com"] {
+  color: olive;
+}
+
+/* Group Selector */
+/* h2,
+h3 {
+  font-size: 20px;
+} */
+
+.heading2,
+#heading3,
+h4 {
+  font-size: 20px;
+  background-color: yellow;
+}
+
+/* Pseudo classes */
+h2:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+/* Pseudo element */
+h3::first-letter {
+  color: brown;
+}
+
+h3::before {
+  content: "Placed before h3: ";
+}
+
+h3::after {
+  content: " :Placed after h3";
+}
+
+/* Earlier rule */
+h6 {
+  color: red !important;
+}
+
+/* Later rule */
+h6 {
+  color: aquamarine;
+}

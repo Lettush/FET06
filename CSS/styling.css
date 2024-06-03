@@ -1,0 +1,73 @@
+body {
+  background-color: #8b8000;
+
+  /* images */
+  /* background-image: url("./bg.jpg"); */
+  background-image: url("./images/bg2.jpg");
+
+  /* gradient background */
+  background: rgb(223, 209, 134);
+  background: linear-gradient(54deg, rgba(223, 209, 134, 1) 0%, rgba(224, 134, 37, 1) 38%, rgba(226, 233, 132, 1) 100%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.font-sample {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.text-sample {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+#spacing-sample {
+  letter-spacing: 5px;
+  line-height: 10;
+}
+
+#shadow-sample {
+  text-shadow: 15px 5px 5px rgb(54, 214, 166);
+  /* text-shadow:
+	x-coordinate
+	y-coordinate
+	blur radius
+	color of the shadow
+	*/
+}
+
+.box-model {
+  background-color: antiquewhite;
+  height: 100px;
+  width: 100px;
+
+  padding: 10px 20px 5px 25px;
+  padding-top: 15px;
+
+  border-width: 5px;
+  border-style: dotted;
+  border-color: crimson;
+
+  border: 10px double darkblue;
+
+  border-top: 5px solid green;
+
+  border-radius: 50px;
+
+  margin: 5px 10px 40px 8px;
+  /* margin-left, margin-right: , margin-bottom: , margin-top: */
+}
+
+/* Padding & Margin
+				1 value = applied to all 4 sides
+    2 value = top and bottom side || right and left side
+    3 value = top side || left and right side || bottom side
+    4 value = top side || right side || bottom side || left side
+*/
