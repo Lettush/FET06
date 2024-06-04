@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Ancestor Element */
+        .ancestor {
+            position: relative;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Relative Positioning */
+        .relative {
+            /* can move based on its original position */
+            position: relative;
+
+            /* 
+                Positioning Properties
+                top, right, bottom and left
+            */
+            /* top: 100px; */
+            bottom: 50px;
+            left: 100px;
+        }
+
+        /* Absolute Positioning */
+        .absolute {
+            /* can move based on its parent/ancestor */
+            position: absolute;
+
+            /* top: 0px; */
+            bottom: 0px;
+
+            /* left: 0px; */
+            right: 0px;
+        }
+
+        .fixed {
+            /* will stay in place when scrolling */
+            position: fixed;
+
+            /* Positioning Property */
+            top: 0px;
+            /* bottom: 50px;
+            right: 50px; */
+        }
+
+        .sticky {
+            /* 
+                By default, normal document flow
+                When reaching pos. prop, turns fixed
+            */
+            position: sticky;
+
+            /* Positioning Property */
+
+            /* Normal until you scroll down and hit top of 0 */
+            top: 0px;
+            
+            /* Normal until you scroll up and hit bottom of 0 */
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ancestor">
+        <div>This is the first line.</div>
+        <div>This is the second line.</div>
+        <div class="relative">Relative Positioning</div>
+        <div class="absolute">Absolute Positioning</div>
+        <div class="fixed">Fixed Positioning</div>
+    </div>
+
+    <div style="height: 2000px;">Scroll down to see the STICKY element in action.</div>
+    <div class="sticky">Sticky Positioning</div>
+    <div style="height: 2000px;">Scroll down to see the STICKY element in action.</div>
+</body>
+</html>
